@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Recipe Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">🍽 Simple Recipe Website</h1>
+
+    <input type="text" id="search" placeholder="Search recipe..." onkeyup="searchRecipe()">
+
+    <div class="container" id="recipeList">
+
+        <!-- Recipe Card 1 -->
+        <div class="card">
+            <h2>Masala Dosa</h2>
+            <p>South Indian Crispy Dosa with potato masala.</p>
+            <button onclick="showRecipe('Masala Dosa', 'Rice batter, potatoes, onions, spices', '1. Prepare batter\n2. Cook potato masala\n3. Make dosa\n4. Serve hot')">View</button>
+        </div>
+
+        <!-- Recipe Card 2 -->
+        <div class="card">
+            <h2>Pasta</h2>
+            <p>Quick and easy white sauce pasta.</p>
+            <button onclick="showRecipe('Pasta', 'Pasta, milk, butter, cheese, veggies', '1. Boil pasta\n2. Make white sauce\n3. Mix and cook')">View</button>
+        </div>
+
+        <!-- Recipe Card 3 -->
+        <div class="card">
+            <h2>Paneer Butter Masala</h2>
+            <p>Rich and creamy paneer curry.</p>
+            <button onclick="showRecipe('Paneer Butter Masala', 'Paneer, tomatoes, cream, spices', '1. Make tomato gravy\n2. Add paneer & cream\n3. Cook well')">View</button>
+        </div>
+
+    </div>
+
+    <!-- Popup Box -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span
